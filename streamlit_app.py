@@ -710,7 +710,7 @@ Guidelines:
 # Initialize session state
 if 'messages' not in st.session_state:
     st.session_state.messages = [
-        {"role": "assistant", "content": "👋 Hi! I'm Antarpreet's comprehensive portfolio assistant. I can tell you about her experience in AI/ML and Software Engineering, including cutting-edge projects like 3D medical image segmentation with MONAI, speech therapy simulators, and much more. What would you like to explore?"}
+        {"role": "assistant", "content": "👋 Hi! I'm Antarpreet's comprehensive portfolio assistant. I can tell you about her experience in AI/ML and Software Engineering, and much more. What would you like to explore?"}
     ]
 
 # Initialize Groq client
@@ -750,8 +750,8 @@ st.markdown("""
 # AI Chat Section
 st.markdown("""
 <div class="ai-chat-container">
-    <h2 class="chat-title">🤖 AI Portfolio Assistant</h2>
-    <p class="chat-subtitle">Powered by Groq AI • Ask anything about Antarpreet's experience</p>
+    <h2 class="chat-title">🤖 Portfolio Assistant</h2>
+    <p class="chat-subtitle">Ask anything about Antarpreet's experience</p>
 </div>
 """, unsafe_allow_html=True)
 
