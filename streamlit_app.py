@@ -723,10 +723,11 @@ st.markdown("""
     <h1 class="name-display">Antarpreet Kaur Ghuman</h1>
     <p class="title-role">AI/ML Engineer | WTM Ambassador</p>
     <p class="hero-description">
-        MS in Robotics & AI with 5+ years of experience in tech. Currently an AI/ML Engineer at Sanmina, 
-        after 4 years as a Software Engineer at Dell Technologies. Passionate about translating cutting-edge 
-        AI research into real-world solutions across Healthcare, Computer Vision, NLP, Robotics, and MLOps.
-        Always eager to learn new technologies and take on challenging projects.
+        AI/ML Engineer with a Master’s in Robotics & AI and over 5 years of experience in the tech industry. 
+        Currently driving intelligent automation and machine learning solutions at Sanmina, following a 4-year tenure 
+        as a Software Engineer at Dell Technologies. I specialize in applying state-of-the-art AI research to solve 
+        real-world problems across Healthcare, Computer Vision, Natural Language Processing, Robotics, and MLOps. 
+        Passionate about continuous learning, innovation, and building impactful, production-ready AI systems.
     </p>
 </div>
 """, unsafe_allow_html=True)
