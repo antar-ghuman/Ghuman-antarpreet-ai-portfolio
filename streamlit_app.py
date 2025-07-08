@@ -71,11 +71,11 @@ st.markdown("""
         100% { transform: translateY(-200px); }
     }
     
-    /* Hero section with warm accent glow - REDUCED PADDING */
+    /* Hero section with warm accent glow - RESPONSIVE */
     .hero-container {
         position: relative;
         text-align: center;
-        padding: 2rem 2rem 1rem;
+        padding: 2rem 1rem 1rem;
         z-index: 10;
         display: flex;
         flex-direction: column;
@@ -89,8 +89,8 @@ st.markdown("""
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 500px;
-        height: 500px;
+        width: 300px;
+        height: 300px;
         background: radial-gradient(circle, rgba(255, 140, 105, 0.15) 0%, rgba(255, 107, 107, 0.05) 50%, transparent 100%);
         border-radius: 50%;
         animation: heroGlow 8s ease-in-out infinite;
@@ -102,9 +102,9 @@ st.markdown("""
         50% { transform: translate(-50%, -50%) scale(1.1); opacity: 0.8; }
     }
     
-    /* Sophisticated name styling */
+    /* Sophisticated name styling - RESPONSIVE */
     .name-display {
-        font-size: 4.5rem;
+        font-size: clamp(2rem, 8vw, 4.5rem);
         font-weight: 700;
         margin-bottom: 1rem;
         background: linear-gradient(135deg, #ff8c69 0%, #ff6b6b 25%, #ffa726 50%, #ff8a65 75%, #ff7043 100%);
@@ -115,6 +115,7 @@ st.markdown("""
         animation: warmShimmer 6s ease-in-out infinite;
         letter-spacing: -0.02em;
         text-shadow: 0 4px 20px rgba(255, 107, 107, 0.3);
+        line-height: 1.2;
     }
     
     @keyframes warmShimmer {
@@ -123,12 +124,12 @@ st.markdown("""
     }
     
     .title-role {
-        font-size: 1.4rem;
+        font-size: clamp(1rem, 4vw, 1.4rem);
         color: #c9b3ff;
         font-weight: 500;
         margin-bottom: 1.5rem;
         background: rgba(25, 23, 40, 0.8);
-        padding: 0.8rem 2rem;
+        padding: 0.6rem 1.5rem;
         border-radius: 50px;
         border: 1px solid rgba(138, 43, 226, 0.3);
         backdrop-filter: blur(10px);
@@ -136,37 +137,37 @@ st.markdown("""
     }
     
     .hero-description {
-        font-size: 1.1rem;
+        font-size: clamp(0.9rem, 3vw, 1.1rem);
         color: #b8b5c8;
         max-width: 650px;
         margin: 0 auto 1rem;
         line-height: 1.7;
         background: rgba(25, 23, 40, 0.6);
-        padding: 1.5rem;
+        padding: 1rem;
         border-radius: 20px;
         border: 1px solid rgba(138, 43, 226, 0.2);
         backdrop-filter: blur(15px);
         box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
     }
     
-    /* Glowing skill badges - REDUCED MARGINS */
+    /* Glowing skill badges - FULLY RESPONSIVE */
     .skills-showcase {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 0.8rem;
         max-width: 800px;
         margin: 1rem auto;
-        padding: 0 2rem;
+        padding: 0 1rem;
     }
     
     .skill-badge {
         background: linear-gradient(135deg, rgba(25, 23, 40, 0.8), rgba(45, 27, 61, 0.6));
         border: 1px solid rgba(138, 43, 226, 0.4);
         border-radius: 15px;
-        padding: 0.8rem 1rem;
+        padding: 0.6rem 0.8rem;
         text-align: center;
         font-weight: 500;
-        font-size: 0.9rem;
+        font-size: clamp(0.7rem, 2.5vw, 0.9rem);
         color: #e8e6f0;
         transition: all 0.3s ease;
         cursor: pointer;
@@ -198,18 +199,19 @@ st.markdown("""
         left: 100%;
     }
     
-    /* Sophisticated experience cards */
+    /* Sophisticated experience cards - RESPONSIVE */
     .experience-card {
         background: linear-gradient(135deg, rgba(25, 23, 40, 0.9), rgba(45, 27, 61, 0.7));
         border: 1px solid rgba(138, 43, 226, 0.3);
         border-radius: 20px;
-        padding: 1.5rem;
+        padding: 1.2rem;
         margin: 1rem 0;
         position: relative;
         transition: all 0.4s ease;
         backdrop-filter: blur(20px);
         box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
         overflow: hidden;
+        min-height: 300px;
     }
     
     .experience-card::before {
@@ -235,7 +237,7 @@ st.markdown("""
     }
     
     .card-icon {
-        font-size: 3.5rem;
+        font-size: clamp(2.5rem, 6vw, 3.5rem);
         margin-bottom: 1rem;
         display: block;
         filter: drop-shadow(0 4px 8px rgba(255, 140, 105, 0.3));
@@ -244,16 +246,17 @@ st.markdown("""
     }
     
     .card-title {
-        font-size: 1.5rem;
+        font-size: clamp(1.1rem, 4vw, 1.5rem);
         font-weight: 600;
         color: #ff8c69;
         margin-bottom: 0.5rem;
         position: relative;
         z-index: 2;
+        line-height: 1.3;
     }
     
     .card-company {
-        font-size: 1rem;
+        font-size: clamp(0.8rem, 3vw, 1rem);
         color: #c9b3ff;
         font-weight: 500;
         margin-bottom: 1rem;
@@ -268,12 +271,13 @@ st.markdown("""
         position: relative;
         z-index: 2;
         font-weight: 400;
+        font-size: clamp(0.8rem, 2.5vw, 0.95rem);
     }
     
     .tech-stack {
         display: flex;
         flex-wrap: wrap;
-        gap: 0.5rem;
+        gap: 0.4rem;
         position: relative;
         z-index: 2;
     }
@@ -281,20 +285,20 @@ st.markdown("""
     .tech-item {
         background: linear-gradient(135deg, rgba(138, 43, 226, 0.3), rgba(75, 0, 130, 0.4));
         color: #e8e6f0;
-        padding: 0.4rem 0.8rem;
+        padding: 0.3rem 0.6rem;
         border-radius: 12px;
-        font-size: 0.8rem;
+        font-size: clamp(0.65rem, 2vw, 0.8rem);
         font-weight: 500;
         border: 1px solid rgba(138, 43, 226, 0.5);
         backdrop-filter: blur(5px);
     }
     
-    /* Ambient chat section - REDUCED MARGINS */
+    /* Ambient chat section - RESPONSIVE */
     .ai-chat-container {
         background: linear-gradient(135deg, rgba(25, 23, 40, 0.95), rgba(45, 27, 61, 0.8));
         border: 1px solid rgba(255, 140, 105, 0.3);
         border-radius: 25px;
-        padding: 1.5rem;
+        padding: 1rem;
         margin: 1rem auto;
         max-width: 550px;
         position: relative;
@@ -321,7 +325,7 @@ st.markdown("""
     }
     
     .chat-title {
-        font-size: 2.2rem;
+        font-size: clamp(1.5rem, 5vw, 2.2rem);
         font-weight: 600;
         text-align: center;
         margin-bottom: 1rem;
@@ -337,18 +341,18 @@ st.markdown("""
         text-align: center;
         color: #b8b5c8;
         margin-bottom: 1rem;
-        font-size: 1.1rem;
+        font-size: clamp(0.9rem, 3vw, 1.1rem);
         position: relative;
         z-index: 2;
     }
     
-    /* Chat messages container - REDUCED PADDING */
+    /* Chat messages container - RESPONSIVE */
     .chat-messages {
         background: rgba(0, 0, 0, 0.4);
         border-radius: 20px;
-        padding: 1.5rem;
+        padding: 1rem;
         margin: 1rem 0;
-        max-height: 400px;
+        max-height: 350px;
         overflow-y: auto;
         border: 1px solid rgba(120, 119, 198, 0.3);
         backdrop-filter: blur(10px);
@@ -357,11 +361,11 @@ st.markdown("""
     .user-message-enhanced {
         background: linear-gradient(135deg, #7877c6, #ff77c6);
         color: white;
-        padding: 1.2rem 1.8rem;
+        padding: 1rem 1.2rem;
         border-radius: 20px 20px 5px 20px;
         margin: 1rem 0 1rem auto;
-        max-width: 75%;
-        font-size: 1rem;
+        max-width: 85%;
+        font-size: clamp(0.85rem, 3vw, 1rem);
         line-height: 1.5;
         box-shadow: 0 4px 15px rgba(120, 119, 198, 0.3);
     }
@@ -369,24 +373,24 @@ st.markdown("""
     .assistant-message-enhanced {
         background: rgba(120, 119, 198, 0.2);
         color: #ffffff;
-        padding: 1.2rem 1.8rem;
+        padding: 1rem 1.2rem;
         border-radius: 20px 20px 20px 5px;
         margin: 1rem auto 1rem 0;
-        max-width: 75%;
+        max-width: 85%;
         border: 1px solid rgba(120, 119, 198, 0.4);
-        font-size: 1rem;
+        font-size: clamp(0.85rem, 3vw, 1rem);
         line-height: 1.6;
         backdrop-filter: blur(15px);
     }
     
-    /* Sophisticated input styling */
+    /* Sophisticated input styling - RESPONSIVE */
     .stTextInput > div > div > input {
         background: rgba(120, 119, 198, 0.15) !important;
         border: 2px solid rgba(120, 119, 198, 0.4) !important;
         border-radius: 25px !important;
         color: #ffffff !important;
-        padding: 1rem 1.5rem !important;
-        font-size: 1.1rem !important;
+        padding: 0.8rem 1.2rem !important;
+        font-size: clamp(0.9rem, 3.5vw, 1.1rem) !important;
         backdrop-filter: blur(10px) !important;
     }
     
@@ -405,10 +409,11 @@ st.markdown("""
         border-radius: 25px !important;
         color: #ffffff !important;
         font-weight: 600 !important;
-        padding: 1rem 2.5rem !important;
-        font-size: 1.1rem !important;
+        padding: 0.8rem 1.5rem !important;
+        font-size: clamp(0.9rem, 3.5vw, 1.1rem) !important;
         transition: all 0.3s ease !important;
         backdrop-filter: blur(10px) !important;
+        width: 100% !important;
     }
     
     .stButton > button:hover {
@@ -416,25 +421,27 @@ st.markdown("""
         box-shadow: 0 10px 25px rgba(120, 119, 198, 0.4) !important;
     }
     
-    /* Enhanced quick actions with better prompts - REDUCED MARGINS */
+    /* Enhanced quick actions - RESPONSIVE */
     .quick-actions {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 0.8rem;
         margin: 1rem 0;
+        padding: 0 1rem;
     }
     
     .quick-action-btn {
         background: rgba(120, 119, 198, 0.15);
         border: 1px solid rgba(120, 119, 198, 0.4);
         color: #d0d0ff;
-        padding: 1rem;
+        padding: 0.8rem 0.6rem;
         border-radius: 15px;
         text-align: center;
         cursor: pointer;
         transition: all 0.3s ease;
         backdrop-filter: blur(10px);
         font-weight: 500;
+        font-size: clamp(0.8rem, 2.5vw, 0.95rem);
     }
     
     .quick-action-btn:hover {
@@ -445,17 +452,124 @@ st.markdown("""
         box-shadow: 0 8px 20px rgba(120, 119, 198, 0.3);
     }
     
-    /* Responsive design */
-    @media (max-width: 768px) {
-        .name-display { font-size: 2.5rem; }
-        .hero-container { padding: 2rem 1rem 1.5rem; }
-        .experience-card { 
-            padding: 1.2rem;
-            min-height: 300px;
+    /* COMPREHENSIVE RESPONSIVE DESIGN */
+    
+    /* Mobile First - Extra Small devices (phones, 576px and down) */
+    @media (max-width: 576px) {
+        .hero-container { 
+            padding: 1.5rem 0.8rem 1rem; 
         }
-        .ai-chat-container { 
-            padding: 1.2rem;
-            margin: 1.5rem auto;
+        
+        .hero-container::before {
+            width: 200px;
+            height: 200px;
+        }
+        
+        .hero-description {
+            padding: 0.8rem;
+            margin: 0 0.5rem 1rem;
+        }
+        
+        .skills-showcase {
+            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+            gap: 0.6rem;
+            padding: 0 0.8rem;
+        }
+        
+        .experience-card {
+            padding: 1rem;
+            margin: 0.8rem 0;
+            min-height: 280px;
+        }
+        
+        .ai-chat-container {
+            margin: 1rem 0.5rem;
+            padding: 0.8rem;
+        }
+        
+        .chat-messages {
+            max-height: 300px;
+            padding: 0.8rem;
+        }
+        
+        .quick-actions {
+            grid-template-columns: 1fr;
+            gap: 0.6rem;
+        }
+        
+        .user-message-enhanced,
+        .assistant-message-enhanced {
+            max-width: 95%;
+            padding: 0.8rem 1rem;
+        }
+    }
+    
+    /* Small devices (landscape phones, 576px and up) */
+    @media (min-width: 576px) and (max-width: 768px) {
+        .skills-showcase {
+            grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+        }
+        
+        .quick-actions {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+        .experience-card {
+            min-height: 320px;
+        }
+    }
+    
+    /* Medium devices (tablets, 768px and up) */
+    @media (min-width: 768px) and (max-width: 992px) {
+        .hero-container {
+            padding: 2rem 1rem 1.5rem;
+        }
+        
+        .skills-showcase {
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        }
+        
+        .quick-actions {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        
+        .experience-card {
+            min-height: 360px;
+            padding: 1.3rem;
+        }
+    }
+    
+    /* Large devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+        .hero-container {
+            padding: 2rem 2rem 1rem;
+        }
+        
+        .hero-container::before {
+            width: 500px;
+            height: 500px;
+        }
+        
+        .skills-showcase {
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        }
+        
+        .quick-actions {
+            grid-template-columns: repeat(5, 1fr);
+        }
+        
+        .experience-card {
+            min-height: 420px;
+            padding: 1.5rem;
+        }
+        
+        .ai-chat-container {
+            padding: 1.5rem;
+        }
+        
+        .chat-messages {
+            padding: 1.5rem;
+            max-height: 400px;
         }
     }
 </style>
