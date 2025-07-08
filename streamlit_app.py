@@ -923,42 +923,73 @@ st.markdown('</div>', unsafe_allow_html=True)
 
 # Leadership and achievements section
 st.markdown("""
+<style>
+.leadership-grid {
+    display: grid;
+    gap: 1.2rem;
+    justify-items: center;
+}
+
+/* Mobile: 1 column */
+@media (max-width: 768px) {
+    .leadership-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Tablet: 2 columns */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .leadership-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop: 3 columns */
+@media (min-width: 1025px) {
+    .leadership-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.leadership-item {
+    text-align: center; 
+    padding: 1rem; 
+    width: 100%; 
+    max-width: 300px;
+}
+</style>
+
 <div style="margin: 2rem 0; padding: 1.5rem; background: rgba(255, 255, 255, 0.03); border-radius: 25px; border: 1px solid rgba(255, 255, 255, 0.1); backdrop-filter: blur(20px);">
     <h2 style="font-size: clamp(1.5rem, 5vw, 2.2rem); text-align: center; margin-bottom: 1.5rem; color: #ffffff;">
         🌟 Leadership & Recognition
     </h2>
-    <div class="leadership-grid" style="
-        display: grid; 
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-        gap: 1.2rem;
-        justify-items: center;
-    ">
-        <div style="text-align: center; padding: 1rem; width: 100%; max-width: 300px;">
+    <div class="leadership-grid">
+        <div class="leadership-item">
             <div style="font-size: clamp(2rem, 6vw, 3rem); margin-bottom: 1rem;">👩‍💻</div>
             <h3 style="color: #7877c6; margin-bottom: 0.5rem; font-size: clamp(1rem, 4vw, 1.2rem);">Google WTM Ambassador</h3>
             <p style="color: #e0e0ff; font-size: clamp(0.8rem, 3vw, 0.9rem); line-height: 1.4;">Advancing diversity and inclusivity in tech industry</p>
         </div>
-        <div style="text-align: center; padding: 1rem; width: 100%; max-width: 300px;">
+        <div class="leadership-item">
             <div style="font-size: clamp(2rem, 6vw, 3rem); margin-bottom: 1rem;">🏆</div>
             <h3 style="color: #ff77c6; margin-bottom: 0.5rem; font-size: clamp(1rem, 4vw, 1.2rem);">Dell IT Development Program</h3>
             <p style="color: #e0e0ff; font-size: clamp(0.8rem, 3vw, 0.9rem); line-height: 1.4;">Selected as 1 of 27 from 500+ global participants</p>
         </div>
-        <div style="text-align: center; padding: 1rem; width: 100%; max-width: 300px;">
+        <div class="leadership-item">
             <div style="font-size: clamp(2rem, 6vw, 3rem); margin-bottom: 1rem;">⭐</div>
             <h3 style="color: #77c6a1; margin-bottom: 0.5rem; font-size: clamp(1rem, 4vw, 1.2rem);">Dell Rockstar Award</h3>
             <p style="color: #e0e0ff; font-size: clamp(0.8rem, 3vw, 0.9rem); line-height: 1.4;">Recognition for outstanding performance and impact</p>
         </div>
-        <div style="text-align: center; padding: 1rem; width: 100%; max-width: 300px;">
+        <div class="leadership-item">
             <div style="font-size: clamp(2rem, 6vw, 3rem); margin-bottom: 1rem;">🛡️</div>
             <h3 style="color: #c677ff; margin-bottom: 0.5rem; font-size: clamp(1rem, 4vw, 1.2rem);">Dell Bravo Award</h3>
             <p style="color: #e0e0ff; font-size: clamp(0.8rem, 3vw, 0.9rem); line-height: 1.4;">Security Champion for enhancing application security</p>
         </div>
-        <div style="text-align: center; padding: 1rem; width: 100%; max-width: 300px;">
+        <div class="leadership-item">
             <div style="font-size: clamp(2rem, 6vw, 3rem); margin-bottom: 1rem;">☁️</div>
             <h3 style="color: #7877c6; margin-bottom: 0.5rem; font-size: clamp(1rem, 4vw, 1.2rem);">Google Cloud Certified</h3>
             <p style="color: #e0e0ff; font-size: clamp(0.8rem, 3vw, 0.9rem); line-height: 1.4;">Digital Leader Certification + Gen AI Course</p>
         </div>
-        <div style="text-align: center; padding: 1rem; width: 100%; max-width: 300px;">
+        <div class="leadership-item">
             <div style="font-size: clamp(2rem, 6vw, 3rem); margin-bottom: 1rem;">🎤</div>
             <h3 style="color: #ff77c6; margin-bottom: 0.5rem; font-size: clamp(1rem, 4vw, 1.2rem);">Toastmasters Member</h3>
             <p style="color: #e0e0ff; font-size: clamp(0.8rem, 3vw, 0.9rem); line-height: 1.4;">Developed public speaking and leadership skills</p>
