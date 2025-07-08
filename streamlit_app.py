@@ -725,7 +725,7 @@ st.markdown("""
     <p class="hero-description">
         MS in Robotics & AI with 5+ years of experience in tech. Currently an AI/ML Engineer at Sanmina, 
         after 4 years as a Software Engineer at Dell Technologies. Passionate about translating cutting-edge 
-        AI research into real-world solutions across healthcare, computer vision, NLP, robotics, and MLOps.
+        AI research into real-world solutions across Healthcare, Computer Vision, NLP, Robotics, and MLOps.
         Always eager to learn new technologies and take on challenging projects.
     </p>
 </div>
