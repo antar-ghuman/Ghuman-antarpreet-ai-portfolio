@@ -649,10 +649,38 @@ Computer Vision Projects:
 • K-Means Face Clustering: 91% accuracy with custom K-Means algorithm in OpenCV
 
 Robotics Projects:
-• Vision for Robotics: Stereo odometry with feature detection, depth estimation, optical flow tracking
-• RRT Path Finding: Optimized pathfinding algorithm for obstacle avoidance
-• PID and Pure Pursuit: Car steering control with trajectory visualization in RVIZ
-• Evader+Mapper: Dual ROS nodes for obstacle avoidance and environment mapping
+* **Vision for Robotics**
+
+  * Developed stereo odometry pipeline using feature detection, depth estimation, and optical flow tracking.
+  * Built visual odometry system with FAST/ORB features and solvePnPRansac for pose estimation from stereo feeds.
+  * **Tech Stack:** Python, OpenCV, ROS, stereo cameras, cv\_bridge
+
+* **RRT Path Planning**
+
+  * Implemented RRT-based pathfinding algorithm for obstacle avoidance in simulated environments.
+  * Optimized tree expansion and collision detection for real-time navigation.
+  * **Tech Stack:** Python, ROS, RVIZ
+
+* **PID and Pure Pursuit Controller**
+
+  * Designed steering control for simulated car using PID and Pure Pursuit algorithms.
+  * Visualized trajectory and real-time vehicle control in RVIZ.
+  * **Tech Stack:** Python, ROS, Gazebo, RVIZ
+
+* **Structure from Motion (SfM) & Point Cloud Processing**
+
+  * Built SfM pipeline from multi-view images to 3D point cloud reconstruction using bundle adjustment and fundamental matrix estimation.
+  * Developed point cloud downsampling using distance filtering and K-D trees.
+  * Implemented custom K-means clustering for semantic segmentation of 3D point clouds.
+  * **Tech Stack:** Python, OpenCV, Open3D, NumPy, SciPy, K-D Trees, K-means
+
+* **Autonomous Navigation & Laser Mapping**
+
+  * Created laser-based obstacle avoidance system enabling 2 m/s forward motion and randomized turns on detection.
+  * Built laser mapping system to convert scan data into global Cartesian coordinates, mapping complete environments with trajectory visualization.
+  * **Tech Stack:** Python, ROS, Gazebo, LaserScan, AckermannDrive, Matplotlib
+
+
 
 Cloud/API Projects:
 • Tweet Translator: Real-time translation service using Watson Language Translation API
