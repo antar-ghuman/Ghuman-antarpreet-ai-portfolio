@@ -687,8 +687,28 @@ Cloud/API Projects:
 • Real-time Log Management: Fluentd and Kafka system with Elasticsearch and Grafana visualization
 
 Machine Learning Projects:
-• RL with Real-World Uncertainties: Enhanced Q-learning and Actor-Critic with wind noise and engine failures
 • Handwritten Digits Classification: MLP vs CNN performance comparison
+
+Reinforcement Learning Projects:
+- RL Algorithms with Real-World Uncertainties
+    Evaluated RL algorithms (Q-learning and Actor-Critic) on Gymnasium environments using Python and PyTorch
+    Introduced real-world uncertainties such as wind noise and engine failures to enhance agent decision-making
+    Implemented stochastic environments with dynamic state transitions and noise injection for robust policy learning
+    Analyzed algorithm performance under uncertainty conditions and provided comparative analysis of tabular vs deep RL methods
+
+- Deep Q-Network (DQN) Implementation & CartPole Environment
+    Implemented Deep Q-Network (DQN) from scratch following DeepMind's seminal paper for learning from raw pixels
+    Applied DQN and Double DQN (DDQN) algorithms to solve CartPole-v1 environment achieving 470+ average reward over 100 episodes
+    Developed experience replay buffer and target network stabilization techniques for improved training convergence
+    Conducted hyperparameter tuning for discount factor, epsilon decay, and network architecture optimization
+    Compared vanilla DQN vs DDQN performance showing improved stability and reduced overestimation bias
+
+- Multi-Environment RL Analysis
+    Designed custom grid-world environments with both deterministic and stochastic dynamics for comprehensive algorithm testing
+    Implemented Q-learning, SARSA, and Monte Carlo methods for tabular environments with safety constraints
+    Applied deep RL techniques to complex environments including LunarLander and Atari games
+    Developed stock trading environment using 2-year NVIDIA historical data with Q-learning agent achieving profitable trading strategies
+    Created comprehensive performance evaluation framework with reward dynamics analysis and policy visualization
 
 LEADERSHIP & CERTIFICATIONS:
 • Google Women Techmakers Ambassador - advancing diversity in tech
@@ -819,16 +839,49 @@ if send_clicked and user_input:
     st.session_state.messages.append({"role": "assistant", "content": ai_response})
     st.rerun()
 
-# Quick action buttons
-st.markdown("""
-<div class="quick-actions">
-    <div class="quick-action-btn">📡 Cloud & MLOps</div>
-    <div class="quick-action-btn">👁️ Computer Vision</div>
-    <div class="quick-action-btn">🚀 Robotics & RL</div>
-    <div class="quick-action-btn">🎨 Diffusion Models</div>
-    <div class="quick-action-btn">🏥 Medical AI</div>
-</div>
-""", unsafe_allow_html=True)
+# Handle quick action button clicks
+def handle_quick_action(topic):
+    questions = {
+        "📡 Cloud & MLOps": "Tell me about Antarpreet's experience with cloud technologies, Kubernetes, and MLOps practices.",
+        "👁️ Computer Vision": "What computer vision and medical imaging projects has Antarpreet worked on?",
+        "🚀 Robotics & RL": "Describe Antarpreet's robotics projects and reinforcement learning experience.",
+        "🎨 Diffusion Models": "What work has Antarpreet done with diffusion models and generative AI?",
+        "🏥 Medical AI": "Tell me about Antarpreet's medical AI and healthcare projects."
+    }
+    
+    if topic in questions:
+        question = questions[topic]
+        st.session_state.messages.append({"role": "user", "content": question})
+        
+        with st.spinner("🤖 AI is thinking..."):
+            ai_response = get_ai_response(question, groq_client)
+        
+        st.session_state.messages.append({"role": "assistant", "content": ai_response})
+        st.rerun()
+
+# Interactive Quick Action Buttons
+col1, col2, col3, col4, col5 = st.columns(5)
+
+with col1:
+    if st.button("📡 Cloud & MLOps", key="cloud_mlops", use_container_width=True):
+        handle_quick_action("📡 Cloud & MLOps")
+
+with col2:
+    if st.button("👁️ Computer Vision", key="computer_vision", use_container_width=True):
+        handle_quick_action("👁️ Computer Vision")
+
+with col3:
+    if st.button("🚀 Robotics & RL", key="robotics_rl", use_container_width=True):
+        handle_quick_action("🚀 Robotics & RL")
+
+with col4:
+    if st.button("🎨 Diffusion Models", key="diffusion_models", use_container_width=True):
+        handle_quick_action("🎨 Diffusion Models")
+
+with col5:
+    if st.button("🏥 Medical AI", key="medical_ai", use_container_width=True):
+        handle_quick_action("🏥 Medical AI")
+
 
 # Experience Section
 st.markdown("""
