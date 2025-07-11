@@ -653,7 +653,7 @@ Robotics Projects:
 
   * Developed stereo odometry pipeline using feature detection, depth estimation, and optical flow tracking.
   * Built visual odometry system with FAST/ORB features and solvePnPRansac for pose estimation from stereo feeds.
-  * **Tech Stack:** Python, OpenCV, ROS, stereo cameras, cv\_bridge
+  * **Tech Stack:** Python, OpenCV, ROS, stereo cameras
 
 * **RRT Path Planning**
 
