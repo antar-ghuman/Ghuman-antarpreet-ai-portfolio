@@ -643,6 +643,10 @@ KEY PROJECTS:
 AI-Driven Speech Therapy Simulator (Master's Thesis):
 • Developed AI-powered speech therapy simulator using BART for sequence-to-sequence modeling
 • Integrated Human-in-the-Loop (HITL) system with expert SLP feedback for clinical alignment
+AI Research Innovation Mapper |Streamlit, LangChain, Llama-3.3-70b,ChromaDB,ArXiv/PubMed APIs
+• Multi-agent AI system that discovers breakthrough innovation opportunities by connecting techniques across scien-
+tific domains using paper discovery, cross-domain mapping, and innovation synthesis agents
+• Deployed full-stack applicati
 
 Computer Vision Projects:
 • Deep Learning Based Facial Analysis: Face detection, recognition, clustering, emotion/gender/age classification
