@@ -602,6 +602,8 @@ CURRENT ROLE - AI/ML Engineer at Sanmina (Jul 2024 - Present):
 • Integrated MONAI Label with 3D Slicer for interactive active learning workflows
 • Deployed and configured Kubeflow on on-premises Kubernetes nodes with GPU-accelerated ML pipelines
 • Designed end-to-end HPC demo processing 5TB weather data using Kubeflow Pipelines and NVIDIA FourCastNet
+• Onboarded and integrated Ray ecosystem components (Ray Core, Ray Tune, RLlib, Ray Serve) to build and deploy scalable distributed ML applications,
+    enabling efficient training, hyperparameter tuning, and serving at scale.
 
 PREVIOUS ROLES:
 Graduate Research Assistant - AI Lab, University at Buffalo (Oct 2023 - June 2024):
