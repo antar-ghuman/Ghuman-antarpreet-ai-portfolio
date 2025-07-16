@@ -910,9 +910,9 @@ with col1:
         </div>
         <div class="card-description" style="flex-grow: 1; margin-bottom: 1rem;">
             Working on AI/ML projects spanning computer vision, transformer-based architectures, and self-supervised learning, 
-            along with distributed deep learning and scalable MLOps workflows, delivering solutions across cloud, edge, and HPC environments
+            along with distributed deep learning and scalable MLOps workflows, delivering solutions across cloud, edge, and HPC environments.
             Focused on building robust models, optimizing large-scale training, and deploying end-to-end ML pipelines,
-            driving efficiency and performance in production-ready systems
+            driving efficiency and performance in production-ready systems.
         </div>
         <div class="tech-stack" style="margin-top: auto;">
             <span class="tech-item">MONAI</span>
