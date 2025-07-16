@@ -607,7 +607,7 @@ PREVIOUS ROLES:
 Graduate Research Assistant - AI Lab, University at Buffalo (Oct 2023 - June 2024):
 • Collaborated on Vector Quantized Diffusion model for text-conditioned chest X-ray synthesis at 256x256 and 512x512 resolutions
 • Developed novel loss function with Multi-scale Structural Similarity (MS-SSIM) to preserve radiological accuracy
-• Increased DenseNet-121 classification accuracy from 38.2% to 69.1% using synthetic data augmentation
+• Increased DenseNet-121 classification accuracy by 30% using synthetic data augmentation
 
 Software Engineer 2 - Dell Technologies (Jul 2018 - Aug 2022):
 IoT Core Containerization:
@@ -909,9 +909,10 @@ with col1:
             <div class="card-company">Sanmina • Jul 2024 - Present</div>
         </div>
         <div class="card-description" style="flex-grow: 1; margin-bottom: 1rem;">
-            Benchmarked cutting-edge Auto3Dseg models (DINTS, SwinUNetR, SegResNet) for medical imaging. 
-            Applied self-supervised learning pipelines for 3D medical image segmentation using MONAI. 
-            Implemented Distributed Data Parallel training, achieving 53.5% training time reduction on H200 GPUs.
+            Working on AI/ML projects spanning computer vision, transformer-based architectures, and self-supervised learning, 
+            along with distributed deep learning and scalable MLOps workflows, delivering solutions across cloud, edge, and HPC environments
+            Focused on building robust models, optimizing large-scale training, and deploying end-to-end ML pipelines,
+            driving efficiency and performance in production-ready systems
         </div>
         <div class="tech-stack" style="margin-top: auto;">
             <span class="tech-item">MONAI</span>
@@ -936,7 +937,7 @@ with col2:
         </div>
         <div class="card-description" style="flex-grow: 1; margin-bottom: 1rem;">
             Developed Vector Quantized Diffusion model for chest X-ray synthesis. 
-            Improved DenseNet-121 classification accuracy from 38.2% to 69.1% using synthetic data augmentation. 
+            Improved DenseNet-121 classification accuracy by 30% using synthetic data augmentation. 
             Created novel loss function with Multi-scale Structural Similarity.
         </div>
         <div class="tech-stack" style="margin-top: auto;">
