@@ -598,7 +598,7 @@ CURRENT ROLE - AI/ML Engineer at Sanmina (Jul 2024 - Present):
 • Benchmarked cutting-edge Auto3Dseg models (DINTS, SwinUNetR, SegResNet) for architecture selection
 • Engineered face analytics using MTCNN and MediaPipe for bounding box generation and facial landmark detection
 • Implemented Distributed Data Parallel (DDP) for training on H200 NVL GPUs, reducing training time by 53.5%
-• Applied Stable Diffusion and StyleGAN for medical text-to-image synthesis and visual domain transfer
+• Applied Stable Diffusion and StyleGAN for text-to-image synthesis and visual domain transfer
 • Integrated MONAI Label with 3D Slicer for interactive active learning workflows
 • Deployed and configured Kubeflow on on-premises Kubernetes nodes with GPU-accelerated ML pipelines
 • Designed end-to-end HPC demo processing 5TB weather data using Kubeflow Pipelines and NVIDIA FourCastNet
@@ -643,8 +643,10 @@ Frameworks: Spring Boot, JUnit, Linux, AWS, MATLAB
 
 KEY PROJECTS:
 AI-Driven Speech Therapy Simulator (Master's Thesis):
-• Developed AI-powered speech therapy simulator using BART for sequence-to-sequence modeling
-• Integrated Human-in-the-Loop (HITL) system with expert SLP feedback for clinical alignment
+• Created a dataset from unstructured Clinical Notes and Fine-tuned BART model for seq-to-seq speech therapy
+feedback generation, applying LLM fine-tuning techniques to healthcare for personalized therapeutic responses
+• Integrated a Human-in-the-Loop (HITL) system with expert SLP feedback, improving model alignment with clinical
+needs and iteratively enhancing output relevance and accuracy
 
 AI Research Innovation Mapper - Tech Stack: Streamlit, LangChain, Llama-3.3-70b,ChromaDB,ArXiv/PubMed APIs
 • Multi-agent AI system that discovers breakthrough innovation opportunities by connecting techniques across scientific domains using paper discovery, cross-domain mapping, and innovation synthesis agents
